@@ -16,7 +16,7 @@ Tasks:
 
 Below is a image that illustrates how the application works.
 
-![alt text](streaming_tool_img1.png)
+![alt text](imgs/streaming_tool_img1.png)
 
 ### Improvements
 
@@ -34,7 +34,10 @@ After we start to receive some topics with large volumes of data some of the wor
 
 - Design and develop a auxiliary tool that uses a scheduling algorithm to automatically groups topics by workers according to the execution time that each topic was taking.
 
-    Below is a visual representation of how topics would be distributed by 4 streaming worker jobs.
+    Below is a visual representation of how topics would be distributed by 4 streaming worker jobs, and a representation of how the workers extract data from topics.
 
-    ![alt text](scheduler_optimization.png)
+    ![alt text](imgs/scheduler_optimization.png)
 
+    ![alt text](imgs/scheduler_optimization_1.png)
+
+NOTE: All paths and "business" names were changed
