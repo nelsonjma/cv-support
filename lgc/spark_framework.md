@@ -2,21 +2,29 @@
 
 ## Challenge
 
-The challenge here was not related with any technical limitation, it was more related with time constraint. What this means is that we add pressure to build a data model that was being design based on the data that we where receiving from kafka.
+The main challenge was not related with any technical limitation, but rather related to time constraints. This meant that there was significant pressure to start working on a data model that was being design based on the real-time data being received from Kafka.
 
 ## Implementation
 
 Tasks:
 
-- Design and implement a framework that could in a simplified maner transform and move from one data storage (s3) into another (redshift).
+- Design and implement a framework to simplify the transformation and movement of data from one storage system (s3) to another (Redshift).
 
 ### Solution
 
-To mitigate time constrain issue I developed a framework that permitted the data engineers focus on the business components and the framework would provide the logging mechanisms, error handling, user authentication and access to environment variables.
+To address the time constraints, the framework needed to allow the data engineers to focus on business components while the framework handles logging mechanisms, error handling, user authentication, and access to environment variables.
 
-The framework was composed by four components source, middleware, destination and custom. The first three components load transform and write data the last component exists for cases when its required to do some type of operation that is not supported natively by spark, like for example read from a API, execute a capitalize function on a complete name.
+The framework consists of four main components:
 
-Below is a example of a configuration file that is loaded into the framework.
+- Source: Extracts data from various sources.
+
+- Middleware: Transforms the extracted data.
+
+- Destination: Writes the transformed data to the target storage system.
+
+-Custom: Provides functionality for operations not natively supported by Spark, such as reading from an API or executing custom functions (e.g., capitalizing a complete name).
+
+Below is an example of a configuration file.
 
 ```yaml
   - format: custom.spark.udf.capitalize
