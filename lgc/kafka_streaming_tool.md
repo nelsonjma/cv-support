@@ -4,7 +4,7 @@
 
 Each topic contained different data sources and the schema of each data sources would evolve in terms of adding,removing and change the data type of columns.
 
-### Implementation (2022)
+### Implementation
 
 
 Tasks:
@@ -18,7 +18,7 @@ Below is a image that illustrates how the application works.
 
 ![alt text](imgs/streaming_tool_img1.png)
 
-### Improvements
+### Improvements:
 
 After we start to receive some topics with large volumes of data some of the workers start to fail and force the application to 
 
