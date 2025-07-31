@@ -10,9 +10,9 @@ Each topic contained different data sources and the schema of each data source w
 Tasks:
 - Design the tool that would consume the data taking in consideration the way the data is sent by each topic.
 
-- Implement the first prototype
+- Implement the first prototype.
 
-- Help in implementation of the application
+- Help with the implementation of the application.
 
 Below is a image that illustrates how the application works.
 
