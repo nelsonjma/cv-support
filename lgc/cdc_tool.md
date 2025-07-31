@@ -2,18 +2,17 @@
 
 ## Challenge
 
-Develop a new tool that could replace another low code tool that was doing the same job but at a higher cost.
+Develop a new tool to replace an existing low-code tool that performed the same function but at a higher cost.
 
 ### Implementation
 
 Tasks:
-- design the new tool with the support of one of the data engineers that was working with the old tool.
+- Design the new tool in collaboration with one of the data engineers who was working with the old tool.
 
-- Help in implementation.
+- Help in the implementation.
 
 #### Solution
 
-This tool was design to combined tasks in airflow and spark. Airflow was responsible to identify what tables add changes that required synchronization and send this information to spark using SQS queues. Spark was responsible do fetch the changes from SQL-Server and send it to Redshift.
+This tool was design to combined tasks from Airflow and Spark. Airflow identifies tables that have changes requiring synchronization and sends this information to Spark via SQS queues. Spark was responsible do fetch the changes from SQL-Server and send it to Redshift.
 
 ![alt text](imgs/cdc_tool.png)
-
