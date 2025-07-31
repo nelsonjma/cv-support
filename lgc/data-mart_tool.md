@@ -2,15 +2,15 @@
 
 ## Challenge
 
-Implement a mechanism that could build data-marts without moving data outside the data-warehouse. This restriction is important because moving data from and into redshift is expensive in terms of computation.
+Implement a mechanism to build data marts within the data warehouse, without moving data in or out of Redshift, due to the high computational cost associated with such transfers.
 
 ### Implementation
 
 Tasks:
-- Design and implement a solution that could deal with the imposed redshift restrictions and at the same time make the tool as flexible as possible for the data engineers to be able to configured the same way they do for the other applications and not be forced to work within Redshift.
+- Design and implement a solution that deals with Redshift's restrictions while maintaining flexibility for data engineers to configure the tool in a similar way to other applications.
 
 #### Solution
 
-For this case we followed a different approach, instead of creating a application, we developed a library that is loaded by the airflow DAG tasks and each task will load a temporary procedure to Redshift and then executes it. With this approach all operations run inside redshift saving computation costs of moving data outside.
+For this case we followed a different approach, instead of developing a standalone application, we created a library that is loaded by Airflow DAG tasks. Each task loads a temporary procedure into Redshift and executes it. This approach ensures that all operations run within Redshift.
 
 ![alt text](imgs/data-marts.png)
