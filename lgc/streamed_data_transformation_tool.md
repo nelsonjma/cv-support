@@ -26,16 +26,16 @@ Image below illustrates how the transformation is processed.
 
 #### Improvements (2023):
 
-Due to the increase of volumes in certain tables the performance of theses jobs started to degrade, to address this issue some parts of the core were refactored.
+Due to the increase of volumes in certain tables the performance of theses jobs started to degrade, to address this issue some parts of the code were refactored.
 
 Tasks:
 - Cache data-frames that are reused in multiple stages.
-- Refactor the code on specific components.
+- Refactor code on specific components.
 - Implement a python multi-thread pool to increase the number of tables that are transformed in parallel(this required extensive testing to be feasible).
 
 #### Improvements (2024):
 
-With the expansion support new data sources like APIs and other data producers, it became necessary to refactor the tool to handle diverse data inputs while maintaining consistent output.
+With the expansion support of new data sources like APIs and other data producers, it became necessary to refactor the tool to handle diverse data inputs while maintaining consistent output.
 
 Tasks:
 

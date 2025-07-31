@@ -2,7 +2,7 @@
 
 ## Challenge
 
-The main challenge was not related with any technical limitation, but rather related to time constraints. This meant that there was significant pressure to start working on a data model that was being design based on the real-time data being received from Kafka.
+For this project, the main challenge was not related with any technical limitation, but rather related to time constraints. This meant that there was significant pressure to start working on a data model that was being design based on the real-time data being received from Kafka.
 
 ## Implementation
 

@@ -2,7 +2,7 @@
 
 ## Challenge
 
-Each topic contained different data sources and the schema of each data sources would evolve in terms of adding,removing and change the data type of columns.
+Each topic contained different data sources and the schema of each data source will evolve in time in terms of adding, removing and change the data type of columns.
 
 ### Implementation
 
@@ -20,21 +20,23 @@ Below is a image that illustrates how the application works.
 
 ### Improvements:
 
-After we start to receive some topics with large volumes of data some of the workers start to fail and force the application to 
-
+We determined that was necessary to modify how certain components worked because the application workers started to fail as the volume of events in specific topics increased.
 
 #### Improvements (2023):
 
-- Readjust the limit of events that each topic could receive.
-- Cache some of the data-frames of some stages that where uses times.
-- Add additional metrics to control the execution time of each individual topic data source.
+Tasks:
 
+- Readjust the limits on max events per topic.
+- Cache frequently used data frames from specific stages.
+- Implement additional metrics to monitor the execution time of each individual topic's data source.
 
 #### Improvements (2024)
 
+Tasks:
+
 - Design and develop a auxiliary tool that uses a scheduling algorithm to automatically groups topics by workers according to the execution time that each topic was taking.
 
-    Below is a visual representation of how topics would be distributed by 4 streaming worker jobs, and a representation of how the workers extract data from topics.
+    Below is a visual representation of how topics would be distributed by four streaming worker jobs, along with an representation of how the workers extract data from topics.
 
     ![alt text](imgs/scheduler_optimization.png)
 

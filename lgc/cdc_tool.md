@@ -13,7 +13,7 @@ Tasks:
 
 #### Solution
 
-This tool was design to combined tasks from Airflow and Spark. Airflow identifies tables that have changes requiring synchronization and sends this information to Spark via SQS queues. Spark was responsible do fetch the changes from SQL-Server and send it to Redshift.
+This tool was design to combine tasks from Airflow and Spark. Airflow identifies tables that have changes requiring synchronization and sends this information to Spark via SQS queues. Spark is responsible do fetch the changes from SQL-Server and send it to Redshift.
 
 ![alt text](imgs/cdc_tool.png)
 
