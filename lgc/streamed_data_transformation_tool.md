@@ -18,7 +18,9 @@ Tasks:
 
 To make the data more readable, the nested structures apart from lists were flatten and converted to columns at the root level of the table. Lists where transformed into separate tables with keys to connect back to the main table. Additionally, all "business" columns columns were converted into strings, while this approach adds extra cost for data consumers, it ensures that the data remains readable, even if column A was initially a datetime formatted string but on later stage starts receiving numbers.
 
-![alt text](imgs/raw_to_transformed_2.png)
+Image below illustrates how the transformation is processed.
+
+![alt text](imgs/raw_to_transformed_3.png)
 
 ### Improvements:
 
@@ -38,3 +40,5 @@ With the expansion support new data sources like APIs and other data producers, 
 Tasks:
 
 - Design and develop a second version of the transformation tool that allows the definition of all necessary components for data transformation in a configuration file.
+
+NOTE: All client and project information was changed to respect privacy.

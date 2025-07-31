@@ -8,7 +8,7 @@ Each topic contained different data sources and the schema of each data sources 
 
 
 Tasks:
-- design the tool that would consume the data taking in consideration the way the data is sent by each topic.
+- Design the tool that would consume the data taking in consideration the way the data is sent by each topic.
 
 - Implement the first prototype
 
@@ -40,4 +40,4 @@ After we start to receive some topics with large volumes of data some of the wor
 
     ![alt text](imgs/scheduler_optimization_1.png)
 
-NOTE: All paths and "business" names were changed
+NOTE: All client and project information was changed to respect privacy.

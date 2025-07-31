@@ -22,7 +22,7 @@ The framework consists of four main components:
 
 - Destination: Writes the transformed data to the target storage system.
 
--Custom: Provides functionality for operations not natively supported by Spark, such as reading from an API or executing custom functions (e.g., capitalizing a complete name).
+- Custom: Provides functionality for operations not natively supported by Spark, such as reading from an API or executing custom functions (ex: capitalizing a complete name).
 
 Below is an example of a configuration file.
 
@@ -55,3 +55,6 @@ Below is an example of a configuration file.
       savemode: overwrite
     query: 'SELECT * FROM musicians_by_country
 ```
+
+NOTE: All client and project information was changed to respect privacy.
+

@@ -14,3 +14,5 @@ Tasks:
 For this case we followed a different approach, instead of developing a standalone application, we created a library that is loaded by Airflow DAG tasks. Each task loads a temporary procedure into Redshift and executes it. This approach ensures that all operations run within Redshift.
 
 ![alt text](imgs/data-marts.png)
+
+NOTE: All client and project information was changed to respect privacy.
